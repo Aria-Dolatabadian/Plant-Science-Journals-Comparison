@@ -36,7 +36,7 @@ else:
         plt.figure(figsize=(10, 12))
 
         # Create subplots for all comparisons
-        plt.subplot(5, 1, 1)
+        plt.subplot(5, 2, 1)
         plt.bar([journal_name_1, journal_name_2],
                 [journal_1_data['Total Citations'].values[0], journal_2_data['Total Citations'].values[0]],
                 color=['blue', 'green'])
@@ -44,7 +44,7 @@ else:
         plt.ylabel('Total Citations')
         plt.title('Comparison of Total Citations between Journals')
 
-        plt.subplot(5, 1, 2)
+        plt.subplot(5, 2, 2)
         plt.bar([journal_name_1, journal_name_2],
                 [journal_1_data['2022 JIF'].values[0], journal_2_data['2022 JIF'].values[0]],
                 color=['blue', 'green'])
@@ -52,7 +52,7 @@ else:
         plt.ylabel('2022 JIF')
         plt.title('Comparison of 2022 JIF between Journals')
 
-        plt.subplot(5, 1, 3)
+        plt.subplot(5, 2, 3)
         plt.bar([journal_name_1, journal_name_2],
                 [journal_1_data['JIF Quartile'].values[0], journal_2_data['JIF Quartile'].values[0]],
                 color=['blue', 'green'])
@@ -60,15 +60,15 @@ else:
         plt.ylabel('JIF Quartile')
         plt.title('Comparison of JIF Quartile between Journals')
 
-        plt.subplot(5, 1, 4)
+        plt.subplot(5, 2, 4)
         plt.bar([journal_name_1, journal_name_2],
                 [journal_1_data['2022 JCI'].values[0], journal_2_data['2022 JCI'].values[0]],
                 color=['blue', 'green'])
-        # plt.xlabel('Journal')
+        plt.xlabel('Journal')
         plt.ylabel('2022 JCI')
         plt.title('Comparison of 2022 JCI between Journals')
 
-        plt.subplot(5, 1, 5)
+        plt.subplot(5, 2, 5)
         plt.bar([journal_name_1, journal_name_2],
                 [journal_1_data['% of OA Gold'].values[0], journal_2_data['% of OA Gold'].values[0]],
                 color=['blue', 'green'])
